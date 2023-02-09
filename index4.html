@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+        /* Flex Wrap
+        nowrap (podrazumevano)
+        wrap
+        wrap-reverse
+        */
+      .roditelj{
+        border: 1px solid red;
+        display: flex;
+        height: 200px;
+        /* ROW je podrazumevana, nista se ne desava  1 2 3 4 poredjani jedan pored drugog */
+        flex-direction: row;  
+
+        align-items: stretch;
+
+      
+        justify-content: space-evenly;
+
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
+      }
+
+      .dete{
+        border: 1px solid blue;
+       text-align: center;
+       width: 800px;
+       /* Pokusvamo da se tujemo sirinu na 200 */
+       /* flex-grow: 1; */
+      }
+
+      /* #e3{
+        flex-grow: 2;
+      } */
+    </style>
+</head>
+<body>
+    <div class="roditelj">
+        <div class="dete" id="e1">
+            Prvo
+        </div>
+
+        <div class="dete" id="e2">
+            Drugo
+        </div>
+
+        <div class="dete" id="e3">
+            Trece
+        </div>
+
+        <div class="dete" id="e4">
+            Cetvrto
+        </div>
+    </div>
+    
+</body>
+</html>
